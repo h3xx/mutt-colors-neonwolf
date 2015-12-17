@@ -1,4 +1,4 @@
-# Neonwolf Colorscheme for Vim
+# Neonwolf Colorscheme for Mutt
 
 This is a high-contrast, dark colorscheme for mutt that was inspired by the badwolf series of color schemes.
 
