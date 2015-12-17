@@ -4,6 +4,18 @@ This is a high-contrast, dark colorscheme for mutt that was inspired by the badw
 
 ![sample](https://raw.githubusercontent.com/h3xx/mutt-colors-neonwolf/master/screenshots/sample.png)
 
+## Installation
+
+Include it as part of your `~/.mutt/muttrc` file.
+
+    $ mkdir -p ~/.mutt
+    $ cp mutt-colors-neonwolf-256.muttrc ~/.mutt
+    $ echo 'source ~/.mutt/mutt-colors-neonwolf-256.muttrc' >>~/.mutt/muttrc
+
+Or if you're particularly lazy:
+
+    $ cat mutt-colors-neonwolf-256.muttrc >>~/.mutt/muttrc
+
 ## Contributing
 
 Send me a pull request!
