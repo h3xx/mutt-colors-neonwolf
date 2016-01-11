@@ -21,11 +21,11 @@ color error         color196        color235                        # message li
 color tilde         color81         color233                        # vi-like tildes marking blank lines
 color message       color82         color235
 color markers       color232        color39                         # wrapped-line /^\+/ markers
-color attachment    color165        color235                        # attachment headers
+color attachment    brightcolor165  color235                        # attachment headers
 color search        color232        color154                        # search patterns in pager
-color status        color232        color39
-color indicator     color232        color154                        # selected email in index
-color tree          color165        color233                        # arrow in threads (`-->')
+color status        brightcolor232  color39
+color indicator     brightcolor232  color154                        # selected email in index
+color tree          brightcolor165  color233                        # arrow in threads (`-->')
 
 # basic monochrome screen
 mono bold           bold
@@ -39,23 +39,23 @@ mono quoted         bold
 
 color index         color160        color233        "~A"            # all messages
 color index         color166        color233        "~E"            # expired messages
-color index         color154        color233        "~N"            # new messages
+color index         brightcolor154  color233        "~N"            # new messages
 color index         color154        color233        "~O"            # old messages
 color index         color244        color233        "~R"            # read messages
-color index         color39         color233        "~Q"            # messages that have been replied to
-color index         color154        color233        "~U"            # unread messages
-color index         color154        color233        "~U~$"          # unread, unreferenced messages
+color index         brightcolor39   color233        "~Q"            # messages that have been replied to
+color index         brightcolor154  color233        "~U"            # unread messages
+color index         brightcolor154  color233        "~U~$"          # unread, unreferenced messages
 color index         color222        color233        "~v"            # messages part of a collapsed thread
 color index         color222        color233        "~P"            # messages from me
 #color index         color39         color233        "~p!~F"        # messages to me
 #color index         color39         color233        "~N~p!~F"      # new messages to me
 #color index         color39         color233        "~U~p!~F"      # unread messages to me
 #color index         color244        color233        "~R~p!~F"      # messages to me
-color index         color165        color233        "~F"            # flagged messages
-color index         color165        color233        "~F~p"          # flagged messages to me
-color index         color165        color233        "~N~F"          # new flagged messages
-color index         color165        color233        "~N~F~p"        # new flagged messages to me
-color index         color165        color233        "~U~F~p"        # new flagged messages to me
+color index         brightcolor165  color233        "~F"            # flagged messages
+color index         brightcolor165  color233        "~F~p"          # flagged messages to me
+color index         brightcolor165  color233        "~N~F"          # new flagged messages
+color index         brightcolor165  color233        "~N~F~p"        # new flagged messages to me
+color index         brightcolor165  color233        "~U~F~p"        # new flagged messages to me
 color index         color232        color196        "!~N ~D"        # deleted messages
 color index         color232        color196        "~N ~D"         # deleted new messages
 color index         color244        color233        "~v~(!~N)"      # collapsed thread with no unread
@@ -72,9 +72,9 @@ color index         color81         color160        "~v~(~D)"       # thread wit
 
 # message headers ------------------------------------------------------
 
-color hdrdefault    color222        color235
-color header        color39         color235        "^(From|To|Cc|Bcc)"
-color header        color165        color235        "^(Subject|Date)"
+color hdrdefault    brightcolor222  color235
+color header        brightcolor39   color235        "^(From|To|Cc|Bcc)"
+color header        brightcolor165  color235        "^(Subject|Date)"
 
 # body -----------------------------------------------------------------
 
@@ -100,9 +100,9 @@ mono  body          bold                            "^gpg: Good signature"
 mono  body          bold                            "^gpg: BAD signature from.*"
 
 # yes, an insane URL regex
-color body          color39         color233        "([a-z][a-z0-9+-]*://(((([a-z0-9_.!~*'();:&=+$,-]|%[0-9a-f][0-9a-f])*@)?((([a-z0-9]([a-z0-9-]*[a-z0-9])?)\\.)*([a-z]([a-z0-9-]*[a-z0-9])?)\\.?|[0-9]+\\.[0-9]+\\.[0-9]+\\.[0-9]+)(:[0-9]+)?)|([a-z0-9_.!~*'()$,;:@&=+-]|%[0-9a-f][0-9a-f])+)(/([a-z0-9_.!~*'():@&=+$,-]|%[0-9a-f][0-9a-f])*(;([a-z0-9_.!~*'():@&=+$,-]|%[0-9a-f][0-9a-f])*)*(/([a-z0-9_.!~*'():@&=+$,-]|%[0-9a-f][0-9a-f])*(;([a-z0-9_.!~*'():@&=+$,-]|%[0-9a-f][0-9a-f])*)*)*)?(\\?([a-z0-9_.!~*'();/?:@&=+$,-]|%[0-9a-f][0-9a-f])*)?(#([a-z0-9_.!~*'();/?:@&=+$,-]|%[0-9a-f][0-9a-f])*)?|(www|ftp)\\.(([a-z0-9]([a-z0-9-]*[a-z0-9])?)\\.)*([a-z]([a-z0-9-]*[a-z0-9])?)\\.?(:[0-9]+)?(/([-a-z0-9_.!~*'():@&=+$,]|%[0-9a-f][0-9a-f])*(;([-a-z0-9_.!~*'():@&=+$,]|%[0-9a-f][0-9a-f])*)*(/([-a-z0-9_.!~*'():@&=+$,]|%[0-9a-f][0-9a-f])*(;([-a-z0-9_.!~*'():@&=+$,]|%[0-9a-f][0-9a-f])*)*)*)?(\\?([-a-z0-9_.!~*'();/?:@&=+$,]|%[0-9a-f][0-9a-f])*)?(#([-a-z0-9_.!~*'();/?:@&=+$,]|%[0-9a-f][0-9a-f])*)?)[^].,:;!)? \t\r\n<>\"]"
+color body          brightcolor39   color233        "([a-z][a-z0-9+-]*://(((([a-z0-9_.!~*'();:&=+$,-]|%[0-9a-f][0-9a-f])*@)?((([a-z0-9]([a-z0-9-]*[a-z0-9])?)\\.)*([a-z]([a-z0-9-]*[a-z0-9])?)\\.?|[0-9]+\\.[0-9]+\\.[0-9]+\\.[0-9]+)(:[0-9]+)?)|([a-z0-9_.!~*'()$,;:@&=+-]|%[0-9a-f][0-9a-f])+)(/([a-z0-9_.!~*'():@&=+$,-]|%[0-9a-f][0-9a-f])*(;([a-z0-9_.!~*'():@&=+$,-]|%[0-9a-f][0-9a-f])*)*(/([a-z0-9_.!~*'():@&=+$,-]|%[0-9a-f][0-9a-f])*(;([a-z0-9_.!~*'():@&=+$,-]|%[0-9a-f][0-9a-f])*)*)*)?(\\?([a-z0-9_.!~*'();/?:@&=+$,-]|%[0-9a-f][0-9a-f])*)?(#([a-z0-9_.!~*'();/?:@&=+$,-]|%[0-9a-f][0-9a-f])*)?|(www|ftp)\\.(([a-z0-9]([a-z0-9-]*[a-z0-9])?)\\.)*([a-z]([a-z0-9-]*[a-z0-9])?)\\.?(:[0-9]+)?(/([-a-z0-9_.!~*'():@&=+$,]|%[0-9a-f][0-9a-f])*(;([-a-z0-9_.!~*'():@&=+$,]|%[0-9a-f][0-9a-f])*)*(/([-a-z0-9_.!~*'():@&=+$,]|%[0-9a-f][0-9a-f])*(;([-a-z0-9_.!~*'():@&=+$,]|%[0-9a-f][0-9a-f])*)*)*)?(\\?([-a-z0-9_.!~*'();/?:@&=+$,]|%[0-9a-f][0-9a-f])*)?(#([-a-z0-9_.!~*'();/?:@&=+$,]|%[0-9a-f][0-9a-f])*)?)[^].,:;!)? \t\r\n<>\"]"
 # and a heavy handed email regex
-color body          color39         color233        "((@(([0-9a-z-]+\\.)*[0-9a-z-]+\\.?|#[0-9]+|\\[[0-9]?[0-9]?[0-9]\\.[0-9]?[0-9]?[0-9]\\.[0-9]?[0-9]?[0-9]\\.[0-9]?[0-9]?[0-9]\\]),)*@(([0-9a-z-]+\\.)*[0-9a-z-]+\\.?|#[0-9]+|\\[[0-9]?[0-9]?[0-9]\\.[0-9]?[0-9]?[0-9]\\.[0-9]?[0-9]?[0-9]\\.[0-9]?[0-9]?[0-9]\\]):)?[0-9a-z_.+%$-]+@(([0-9a-z-]+\\.)*[0-9a-z-]+\\.?|#[0-9]+|\\[[0-2]?[0-9]?[0-9]\\.[0-2]?[0-9]?[0-9]\\.[0-2]?[0-9]?[0-9]\\.[0-2]?[0-9]?[0-9]\\])"
+color body          brightcolor39   color233        "((@(([0-9a-z-]+\\.)*[0-9a-z-]+\\.?|#[0-9]+|\\[[0-9]?[0-9]?[0-9]\\.[0-9]?[0-9]?[0-9]\\.[0-9]?[0-9]?[0-9]\\.[0-9]?[0-9]?[0-9]\\]),)*@(([0-9a-z-]+\\.)*[0-9a-z-]+\\.?|#[0-9]+|\\[[0-9]?[0-9]?[0-9]\\.[0-9]?[0-9]?[0-9]\\.[0-9]?[0-9]?[0-9]\\.[0-9]?[0-9]?[0-9]\\]):)?[0-9a-z_.+%$-]+@(([0-9a-z-]+\\.)*[0-9a-z-]+\\.?|#[0-9]+|\\[[0-2]?[0-9]?[0-9]\\.[0-2]?[0-9]?[0-9]\\.[0-2]?[0-9]?[0-9]\\.[0-2]?[0-9]?[0-9]\\])"
 
 # simplified regex for URL & email
 #color body		magenta		default	"(ftp|https?|gopher|news|telnet|finger)://[^ \"\t\r\n]+"
