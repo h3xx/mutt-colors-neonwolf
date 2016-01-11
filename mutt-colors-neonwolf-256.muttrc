@@ -69,6 +69,10 @@ color index         color81         color233        "~N~v~(~F~N)"   # collapsed 
 color index         color81         color233        "~N~v~(~F)"     # collapsed thread with unread parent, no unread inside, but some flagged
 color index         color39         color233        "~v~(~p)"       # collapsed thread with unread parent, no unread inside, some to me directly
 color index         color81         color160        "~v~(~D)"       # thread with deleted (doesn't differentiate between all or partial)
+color index         color222        color233        "~T"            # tagged messages
+color index         brightcolor222  color233        "~T~F"          # tagged, flagged messages
+color index         brightcolor222  color233        "~T~N"          # tagged, new messages
+color index         brightcolor222  color233        "~T~U"          # tagged, unread messages
 
 # message headers ------------------------------------------------------
 
