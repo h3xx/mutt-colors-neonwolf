@@ -20,7 +20,7 @@
 color error         color196        color235                        # message line error text
 color tilde         color81         color233                        # vi-like tildes marking blank lines
 color message       color82         color235
-color markers       color232        color39                         # wrapped-line /^\+/ markers
+color markers       brightcolor232  color222                        # wrapped-line /^\+/ markers
 color attachment    brightcolor165  color235                        # attachment headers
 color search        color232        color154                        # search patterns in pager
 color status        brightcolor232  color39
