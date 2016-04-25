@@ -1,28 +1,8 @@
+Note: You are currently on a branch that contains no code. This is a single-purpose branch whose contents may change at any time. Its sole purpose is to provide screenshots for the [Github project](https://github.com/h3xx/mutt-colors-neonwolf).
+
 # Neonwolf Colorscheme for Mutt
 
 This is a high-contrast, dark colorscheme for mutt that was inspired by the badwolf series of color schemes.
-
-![sample](https://raw.githubusercontent.com/h3xx/mutt-colors-neonwolf/master/screenshots/sample.png)
-
-## Installation
-
-Include it as part of your `~/.mutt/muttrc` file.
-
-    $ mkdir -p ~/.mutt
-    $ cp mutt-colors-neonwolf-256.muttrc ~/.mutt
-    $ echo 'source ~/.mutt/mutt-colors-neonwolf-256.muttrc' >>~/.mutt/muttrc
-
-Or if you're particularly lazy:
-
-    $ cat mutt-colors-neonwolf-256.muttrc >>~/.mutt/muttrc
-
-## Contributing
-
-Send me a pull request!
-
-## TODO
-
-Develop a low-color variant.
 
 ## License
 
