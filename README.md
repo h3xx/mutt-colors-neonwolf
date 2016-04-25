@@ -2,7 +2,7 @@
 
 This is a high-contrast, dark colorscheme for mutt that was inspired by the badwolf series of color schemes.
 
-![sample](https://raw.githubusercontent.com/h3xx/mutt-colors-neonwolf/master/screenshots/sample.png)
+![sample](/../flair/screenshots/sample.png)
 
 ## Installation
 
