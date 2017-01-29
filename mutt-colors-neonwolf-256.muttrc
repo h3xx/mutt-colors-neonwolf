@@ -1,9 +1,6 @@
 # Neonwolf Color Scheme for Mutt
 # Based mostly on the colors from the badwolf airline theme
 
-# make sure that you are using mutt linked against slang, not ncurses, or
-# suffer the consequences of weird color issues. use "mutt -v" to check this.
-
 # custom body highlights -----------------------------------------------
 
 # custom index highlights ----------------------------------------------
