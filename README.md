@@ -6,15 +6,16 @@ This is a high-contrast, dark colorscheme for mutt that was inspired by the badw
 
 ## Installation
 
-Include it as part of your `~/.mutt/muttrc` file.
+Include `mutt-colors-neonwolf-256.muttrc` as part of your `~/.mutt/muttrc` file.
 
     $ mkdir -p ~/.mutt
-    $ cp mutt-colors-neonwolf-256.muttrc ~/.mutt
-    $ echo 'source ~/.mutt/mutt-colors-neonwolf-256.muttrc' >>~/.mutt/muttrc
+    $ cd ~/.mutt
+    $ git clone https://github.com/h3xx/mutt-colors-neonwolf.git mutt-colors-neonwolf
+    $ echo 'source ~/.mutt/mutt-colors-neonwolf/mutt-colors-neonwolf-256.muttrc' >>~/.mutt/muttrc
 
-Or if you're particularly lazy:
+If you keep your muttrc file in `~/.muttrc` then change the last step to:
 
-    $ cat mutt-colors-neonwolf-256.muttrc >>~/.mutt/muttrc
+    $ echo 'source ~/.mutt/mutt-colors-neonwolf/mutt-colors-neonwolf-256.muttrc' >>~/.muttrc
 
 ## Contributing
 
@@ -26,7 +27,7 @@ Develop a low-color variant.
 
 ## License
 
-Copyright (C) 2015-2018 Dan Church.
+Copyright (C) 2015-2020 Dan Church.
 
 License: MIT
 
